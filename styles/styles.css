@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", monospace, sans-serif;
+}
+
+.body {
+  position: relative;
+  background-color: #222;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background-color: white;
+}
+
+.section {
+  background: black;
+}
+
+.landing {
+  background-image: url(../images/arianna-giavardi-TxZQ05sjd_8-unsplash.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: contain;
+  position: relative;
+}
+
+.landing-heading {
+  position: absolute;
+  bottom: 20%;
+  left: 2%;
+  font-size: 55px;
+  color: white;
+  font-family: "Krona One", sans-serif;
+  text-shadow: 2px 1px black;
+}
+
+.my-name {
+  color: transparent;
+  font-size: 55px;
+  -webkit-text-stroke: 1px white;
+  font-family: "Krona One";
+}
+
+.down-button {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+
+.fp-tableCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.about-heading {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about-heading h1 {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-size: 40px;
+  -webkit-text-stroke: 1px white;
+  font-family: "Krona One";
+  color: transparent;
+}
+
+.about-heading h2 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font-size: 20px;
+}
+
+.about-desc {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+.about-desc p {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  padding: 35px;
+}
+
+.ed-work {
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ed-work-heading {
+  grid-row: 1;
+  color: white;
+}
+
+.ed-work-heading h1 {
+  font-size: 20px;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+.ed-work-heading h2 {
+  font-size: 40px;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-family: "Krona One";
+}
+
+.ed-work-items {
+  grid-row: 2;
+  display: grid;
+  grid-template-rows: 10% 1fr 1fr 1fr 10%;
+  grid-template-columns: repeat(10, 10%);
+  justify-content: space-around;
+  width: 100%;
+}
+
+.ed-work-item {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  color: white;
+}
+
+.item1 {
+  padding-left: 20px;
+  border-left: 1px solid white;
+  grid-row: 2;
+  grid-column: 2/7;
+}
+
+.item2 {
+  padding-right: 20px;
+  border-right: 1px solid white;
+  grid-row: 3;
+  grid-column: 4/8;
+}
+
+.item3 {
+  padding-left: 20px;
+  border-left: 1px solid white;
+  grid-row: 4;
+  grid-column: 2/7;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+}
+
+.skills h1 {
+  font-size: 20px;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.skills h2 {
+  font-family: "Krona One";
+  font-size: 40px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.soft-skills {
+  grid-column: 1;
+  grid-row: 2;
+  display: grid;
+  position: relative;
+  place-items: center;
+}
+
+.soft-skills-container {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.soft-skills-container h3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.soft-skills-container ul {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-size: 25px;
+}
+
+.code-skills {
+  grid-column: 2;
+  grid-row: 2;
+  place-items: center;
+  position: relative;
+}
+
+.code-skills-container {
+  width: 80%;
+  height: 80%;
+  background-color: #333;
+  border-radius: 20px;
+  position: relative;
+}
+
+.icon-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.icon-container div {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  position: relative;
+  border-radius: 50%;
+}
+
+.code-skills h3 {
+  text-align: center;
+}
+
+.icon-container div i {
+  place-self: center;
+  position: absolute;
+  left: 40%;
+}
+
+.htmlicon {
+  position: absolute;
+  top: 0;
+}
