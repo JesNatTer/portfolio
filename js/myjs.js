@@ -1,7 +1,6 @@
-new fullpage("#fullpage", {
-  autoScrolling: true,
-  scrollHorizontally: true,
-  loopHorizontal: true,
-  navigation: true,
-  navigationPosition: "right",
-});
+(function () {
+  var scroll = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: true,
+  });
+})();
